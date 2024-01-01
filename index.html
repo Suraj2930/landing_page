@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <center>
+                    <a href="https://www.arduino.cc/" target="_blank">
+                        <img src="images/arduino_logo.png" width="5%" Height="2.5%"></a>
+                </center>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#download">Software</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+
+        <div class="container">
+            <div class="text-container">
+                <h2><u>What is Arduino ? </u></h2>
+                <p>Arduino boards are open-source electronics platforms based on
+                    easy-to-use hardware and software.
+                    They are widely used by hobbyists, students, and professionals
+                    to create interactive projects and prototypes.</p>
+                <p>These boards are equipped with microcontrollers that can be
+                    programmed using the Arduino IDE (Integrated Development
+                    Environment). The flexibility and simplicity of Arduino
+                    make it an excellent choice for various applications,
+                    from simple LED blinking projects to complex robotics and
+                    IoT (Internet of Things) devices.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/arduino_uno_image.png" alt="Arduino Uno Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="container">
+            <div class="image-container">
+                <img src="images/About_image.png" alt="Arduino Uno Image">
+            </div>
+            <div class="text-container">
+                <h2><u>Our Mission & Vision</u></h2>
+                <p>Arduino`s mission is to enable anyone to enhance their lives
+                    through accessible electronics and digital technologies.
+                    There was once a barrier between the electronics, design,
+                    and programming world and the rest of the world. Arduino
+                    has broken down that barrier.</p>
+                <p>Over the years, our products have been the brains behind
+                    thousands of projects, from everyday objects to complex
+                    scientific instruments. A worldwide community, comprising
+                    students, hobbyists, artists, programmers, and professionals,
+                    has gathered around this open-source platform, their
+                    contributions adding up to an incredible amount of accessible
+                    knowledge.</p>
+                <p>Our vision is to make Arduino available to everyone, whether
+                    you are a student, maker or professional, which is why we now
+                    have three segments to our business. These segments work
+                    together as an ecosystem with a shared mindset: we started
+                    with Maker, and that has evolved into Education and PRO
+                    solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+
+        <div class="container">
+            <div class="text-container">
+                <h1><u>Downloads</u></h1>
+                <p>The open-source Arduino Software (IDE) makes it easy to write
+                    code and upload it to the board. This software can be used
+                    with any Arduino board.</p>
+                <p>
+                    Refer to the <a href="https://docs.arduino.cc/software/ide-v1" target="_blank">
+                        Arduino IDE 1.x documentation</a> for installation instructions.
+                </p>
+            </div>
+            <div class="text-container">
+                <p><b>DOWNLOAD OPTIONS</b></p>
+                <ul>
+                    <br>
+                    <b>WINDOWS</b>
+                    <br>
+                    <li><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.exe"> Win 7 and newer </a></li>
+                    <li><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.zip">ZIP file</a></li>
+                    <br>
+                    <b>LINUX</b>
+                    <br>
+                    <li><a href="https://downloads.arduino.cc/arduino-1.8.19-linux32.tar.xz"> 32 bits </a></li>
+                    <li><a href="https://downloads.arduino.cc/arduino-1.8.19-linux64.tar.xz"> 64 bits </a></li>
+                    <br>
+                    <b>Mac OS X </b>
+                    <br>
+                    <li><a href="https://downloads.arduino.cc/arduino-1.8.19-macosx.zip">10.10 or newer </a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Connect with us on social media and stay updated:</p>
+            <ul class="social-media-links">
+                <li><a href="https://twitter.com/arduino" target="_blank">
+                        <img src="images/X_icon.png">
+                    </a></li>
+                <li><a href="https://www.facebook.com/official.arduino" target="_blank">
+                        <img src="images/fb_icon.png">
+                    </a></li>
+                <li><a href="https://www.instagram.com/arduino.cc/" target="_blank">
+                        <img src="images/instagram_icon.png">
+                    </a></li>
+            </ul>
+            <p>Subscribe to our newsletter for the latest updates:</p>
+            Email:
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Subscribe</button>
+            <br><br>
+            <button onclick="backToTop()"><u>Back to top</u></button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

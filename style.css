@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#navbar {
+    background-color: #399999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Distribute items equally */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #00cccc; /* Lighter teal blueish-green color on hover */
+}
+
+section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home {
+    background-color: #e0f2f1; /* Light teal blueish-green background */
+}
+
+#about {
+    background-color: #b2dfdb; /* Slightly darker teal blueish-green background */
+}
+
+#download {
+    background-color: #80cbc4; /* Even darker teal blueish-green background */
+    height : 60vh;
+}
+
+#contact {
+    background-color: #4db6ac; /* Darkest teal blueish-green background */
+    height : 40vh;
+}
+
+#home .container,
+#about .container,
+#download .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#home .text-container,
+#about .text-container,
+#download .text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    max-width: 50%; /* Adjust the width of the text container as needed */
+}
+
+#home .image-container,
+#about .image-container,
+#download .image-container{
+    flex: 1;
+    padding: 10px;
+    max-width: 50%; /* Adjust the width of the image container as needed */
+}
+
+#home img,
+#about img,
+#download img{
+    max-width: 100%;
+    height: auto;
+}
+
+#download a{
+   color: #07796d;
+   text-decoration: underline;
+}
+
+#contact .container {
+    text-align: center;
+    color: #fff;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contact .social-media-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact .social-media-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#contact input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#contact button {
+    padding: 5px 10px;
+    background-color: #008080; /* Teal blueish-green color for button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #005151; /* Darker teal blueish-green color on hover */
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+    .text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
